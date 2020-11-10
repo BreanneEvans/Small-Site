@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title> Midnight Memories </Title> 
+        
+    <link rel="stylesheet" type= "text/css" href= 'stylesheet.css'>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="apagecontainer">
+    <div class="apagenav">
+        <ul>
+        <li><a href="index.html" class="apagehome"> HOME </a> </li>
+        <li> <a href="about.html" class="apageabout"> ABOUT </a> </li>
+       <li><a href="albums.html" class="apagealbum"> ALBUMS</a></li>
+        <li><a href="gallery.html" class="apagegallery"> GALLERY</a>
+        </ul>
+    </div>
+    
+    <div class="apagecover">
+    <img src="assets/images/albums/covers/midnight.jpg" width="100%">
+    </div>
+        
+    <div class="apagelabel">    
+    <img src="assets/images/labels/midnight.png" width="900px">
+    </div>
+    
+        <div class="tracks">
+    <h2>TRACKS</h2>
+    <ol>
+        <li>Best Song Ever</li>
+        <li>Story of My Life</li>
+        <li>Diana</li>
+        <li>Midnight Memories</li>
+        <li>You and I</li>
+        <li>Don’t Forget Where You Belong</li>
+        <li>Strong</li>
+        <li>Happily</li>
+        <li>Right Now</li>
+        <li>Little Black Dress</li>
+        <li>Through the Dark</li>
+        <li>Something Great</li>
+        <li>Little White Lies</li>
+        <li>Better Than Words</li>
+        <li>Why Don’t We Go There</li>
+        <li>Does He Know?</li>
+        <li>Alive</li>
+        <li>Half a Heart</li>
+    </ol>  
+        </div>
+    
+        <div class="awards">
+    <h2>AWARDS</h2>
+    
+    <p>American Music Award for Favorite <br> Album Pop/Rock</p>
+    
+    <p>ARIA Music Award for Best <br> International Artist</p>
+            
+        </div>
+    
+   <div class="playbutton">
+    <h3>"Midnight Memories"</h3>
+     <audio id="audiofile">
+        <source src ="assets/music/Midnight%20Memories.mp3">
+        </audio>   
+        <a class='musicoff'>
+        <img src="assets/images/other/playbutton.png" width="25%" id="play"> </a>
+        
+        <script src="https://khaalipaper.com/js/jquery-3.2.1.min.js"> </script>
+        
+        <script type ="text/javascript">
+        function changeImg() {
+            var image = document.getElementById('play');
+            if (image.src.match("./assets/images/other/playbutton.png")) {
+            image.src = "./assets/images/other/pausebutton.png";   
+            }
+            
+            else {
+                image.src = "./assets/images/other/playbutton.png";
+            }
+        }
+        
+        $(document).ready(function(){
+            $(".musicoff").click(function(){
+                var image = document.getElementById ('play');
+                var x = document.getElementById("audiofile");
+                x.play();
+                x.volume = .1;
+                if (image.src.match("./assets/images/other/playbutton.png")) {
+                image.src ="./assets/images/other/pausebutton.png";     
+                }
+                else {
+                    image.src="./assets/images/other/playbutton.png";
+                    x.pause();
+                }
+            });
+                            
+        });
+        
+        
+        
+        </script>
+        
+  
+ </div>
+</div>
+</body>
+    
+</html>

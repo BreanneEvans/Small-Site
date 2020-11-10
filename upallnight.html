@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title> Up All Night </Title> 
+        
+    <link rel="stylesheet" type= "text/css" href= 'stylesheet.css'>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="apagecontainer">
+    <div class="apagenav">
+        <ul>
+        <li><a href="index.html" class="apagehome"> HOME </a> </li>
+        <li> <a href="about.html" class="apageabout"> ABOUT </a> </li>
+       <li><a href="albums.html" class="apagealbum"> ALBUMS</a></li>
+        <li><a href="gallery.html" class="apagegallery"> GALLERY</a>
+        </ul>
+    </div>
+    
+    <div class="apagecover">
+    <img src="assets/images/albums/covers/night.jpg" width="100%">
+    </div>
+        
+    <div class="apagelabel">    
+    <img src="assets/images/labels/upallnight.png" width="900px">
+    </div>
+    
+        <div class="tracks">
+    <h2>TRACKS</h2>
+    <ol>
+        <li>What Makes You Beautiful</li>
+        <li>Gotta Be You</li>
+        <li>One Thing</li>
+        <li>More Than This</li>
+        <li>Up All Night</li>
+        <li>I Wish</li>
+        <li>Tell Me a Lie</li>
+        <li>Taken</li>
+        <li>I Want</li>
+        <li>Everything About You</li>
+        <li>Same Mistakes</li>
+        <li>Save You Tonight</li>
+        <li>Stole My Heart</li>
+        <li>Stand Up</li>
+        <li>Moments</li>     
+    </ol>
+        </div>
+    
+        <div class="awards">
+    <h2>AWARDS</h2>
+    
+    <p>BBC Radio 1 Teen Award 
+for Best British Album, 2012</p>
+    
+<p>People’s Choice Award 
+for Favorite Album, 2013</p>
+        </div>
+    
+   <div class="playbutton">
+    <h3>"Stole My Heart"</h3>
+     <audio id="audiofile">
+        <source src ="assets/music/Stole%20My%20Heart.mp3" type="audio/mpeg">
+        </audio>   
+        <a class='musicoff'>
+        <img src="assets/images/other/playbutton.png" width="25%" id="play"> </a>
+        
+        <script src="https://khaalipaper.com/js/jquery-3.2.1.min.js"> </script>
+        
+        <script type ="text/javascript">
+        function changeImg() {
+            var image = document.getElementById('play');
+            if (image.src.match("./assets/images/other/playbutton.png")) {
+            image.src = "./assets/images/other/pausebutton.png";   
+            }
+            
+            else {
+                image.src = "./assets/images/other/playbutton.png";
+            }
+        }
+        
+        $(document).ready(function(){
+            $(".musicoff").click(function(){
+                var image = document.getElementById ('play');
+                var x = document.getElementById("audiofile");
+                x.play();
+                x.volume = .1;
+                if (image.src.match("./assets/images/other/playbutton.png")) {
+                image.src ="./assets/images/other/pausebutton.png";     
+                }
+                else {
+                    image.src="./assets/images/other/playbutton.png";
+                    x.pause();
+                }
+            });
+                            
+        });
+        
+        
+        
+        </script>
+        
+  
+ </div>
+</div>
+</body>
+    
+</html>

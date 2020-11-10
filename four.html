@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title> Four </Title> 
+        
+    <link rel="stylesheet" type= "text/css" href= 'stylesheet.css'>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="apagecontainer">
+    <div class="apagenav">
+        <ul>
+        <li><a href="index.html" class="apagehome"> HOME </a> </li>
+        <li> <a href="about.html" class="apageabout"> ABOUT </a> </li>
+       <li><a href="albums.html" class="apagealbum"> ALBUMS</a></li>
+        <li><a href="gallery.html" class="apagegallery"> GALLERY</a>
+        </ul>
+    </div>
+    
+    <div class="apagecover">
+    <img src="assets/images/albums/covers/four.jpg" width="100%">
+    </div>
+        
+    <div class="apagelabel">    
+    <img src="assets/images/labels/four.png" width="900px">
+    </div>
+    
+        <div class="tracks">
+    <h2>TRACKS</h2>
+    <ol>
+        <li>Steal My Girl</li>
+        <li>Ready to Run</li>
+        <li>Where Do Broken Hearts Go</li>
+        <li>18</li>
+        <li>Girl Almighty</li>
+        <li>Fool’s Gold</li>
+        <li>Night Changes</li>
+        <li>No Control</li>
+        <li>Fireproof</li>
+        <li>Spaces</li>
+        <li>Stockholm Syndrome</li>
+        <li>Clouds</li>
+    </ol> 
+
+        </div>
+    
+        <div class="awards">
+    <h2>AWARDS</h2>
+            
+    <p>ARIA Music Award for Best <br> International Artist</p>
+            
+        </div>
+    
+    <div class="playbutton">
+    <h3>"Fool's Gold"</h3>
+     <audio id="audiofile">
+        <source src ="assets/music/Fool's%20Gold.mp3">
+        </audio>   
+        <a class='musicoff'>
+        <img src="assets/images/other/playbutton.png" width="25%" id="play"> </a>
+        
+        <script src="https://khaalipaper.com/js/jquery-3.2.1.min.js"> </script>
+        
+        <script type ="text/javascript">
+        function changeImg() {
+            var image = document.getElementById('play');
+            if (image.src.match("./assets/images/other/playbutton.png")) {
+            image.src = "./assets/images/other/pausebutton.png";   
+            }
+            
+            else {
+                image.src = "./assets/images/other/playbutton.png";
+            }
+        }
+        
+        $(document).ready(function(){
+            $(".musicoff").click(function(){
+                var image = document.getElementById ('play');
+                var x = document.getElementById("audiofile");
+                x.play();
+                x.volume = .1;
+                if (image.src.match("./assets/images/other/playbutton.png")) {
+                image.src ="./assets/images/other/pausebutton.png";     
+                }
+                else {
+                    image.src="./assets/images/other/playbutton.png";
+                    x.pause();
+                }
+            });
+                            
+        });
+        
+        
+        
+        </script>
+        
+  
+ </div>
+</div>
+</body>
+    
+</html>

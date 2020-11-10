@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title> Made in the AM </Title> 
+        
+    <link rel="stylesheet" type= "text/css" href= 'stylesheet.css'>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Quicksand&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="apagecontainer">
+    <div class="apagenav">
+        <ul>
+        <li><a href="index.html" class="apagehome"> HOME </a> </li>
+        <li> <a href="about.html" class="apageabout"> ABOUT </a> </li>
+       <li><a href="albums.html" class="apagealbum"> ALBUMS</a></li>
+        <li><a href="gallery.html" class="apagegallery"> GALLERY</a>
+        </ul>
+    </div>
+    
+    <div class="apagecover">
+    <img src="assets/images/albums/covers/am.jpg" width="100%">
+    </div>
+        
+    <div class="apagelabel">    
+    <img src="assets/images/labels/am.png" width="900px">
+    </div>
+    
+        <div class="tracks">
+    <h2>TRACKS</h2>
+    <ol>
+        <li>Hey Angel</li>
+        <li>Drag Me Down</li>
+        <li>Perfect</li>
+        <li>Infinity</li>
+        <li>End of the Day</li>
+        <li>If I Could Fly</li>
+        <li>Long Way Down</li>
+        <li>Never Enough</li>
+        <li>Olivia</li>
+        <li>What a Feeling</li>
+        <li>Love You Goodbye</li>
+        <li>I Want to Write You a Song</li>
+        <li>History</li>
+        <li>Temporary Fix</li>
+        <li>Walking in the Wind</li>
+        <li>Wolves</li>
+        <li>A.M.</li>
+    </ol>  
+
+        </div>
+    
+        <div class="awards">
+    <h2>AWARDS</h2>
+            
+    <p>ARIA Music Award for Best <br> International Artist</p>
+            
+        </div>
+    
+        <div class="playbutton">
+    <h3>"A.M."</h3>
+     <audio id="audiofile">
+        <source src ="assets/music/AM.mp3">
+        </audio>   
+        <a class='musicoff'>
+        <img src="assets/images/other/playbutton.png" width="25%" id="play"> </a>
+        
+        <script src="https://khaalipaper.com/js/jquery-3.2.1.min.js"> </script>
+        
+        <script type ="text/javascript">
+        function changeImg() {
+            var image = document.getElementById('play');
+            if (image.src.match("./assets/images/other/playbutton.png")) {
+            image.src = "./assets/images/other/pausebutton.png";   
+            }
+            
+            else {
+                image.src = "./assets/images/other/playbutton.png";
+            }
+        }
+        
+        $(document).ready(function(){
+            $(".musicoff").click(function(){
+                var image = document.getElementById ('play');
+                var x = document.getElementById("audiofile");
+                x.play();
+                x.volume = .1;
+                if (image.src.match("./assets/images/other/playbutton.png")) {
+                image.src ="./assets/images/other/pausebutton.png";     
+                }
+                else {
+                    image.src="./assets/images/other/playbutton.png";
+                    x.pause();
+                }
+            });
+                            
+        });
+        
+        
+        
+        </script>
+        
+  
+ </div>
+</div>
+</body>
+    
+</html>

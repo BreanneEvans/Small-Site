@@ -1,0 +1,1615 @@
+/* Home Page */
+.homecontainer {
+    width:1280px;
+    height: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 60% 40%;
+    grid-gap: 5px;
+    background-image:url(assets/images/other/home-01.jpg);
+    background-position: center;    
+    background-size:cover;
+}
+
+.homecontainer > div {   
+    text-align: center;
+}
+
+.homenav {
+    grid-column: 1;
+    grid-row: 1/3;
+    align-self: center;
+}
+
+.hometitle {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 10%;
+    margin-left: -64px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.homelabel {
+    grid-column: 2;
+    grid-row: 2;
+    margin-left: -300px;
+    margin-top: -1%;
+    
+}
+
+.homenav ul {
+    text-align: center;
+}
+
+.homenav ul li {
+    list-style: none;
+    padding: 20px;
+}
+
+.homenav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.homenav ul li a:hover {
+}
+
+a.homeabout { 
+position: relative;
+}
+
+a.homeabout:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.homeabout:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+a.homealbum { 
+position: relative;
+}
+
+a.homealbum:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.homealbum:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+a.homegallery { 
+position: relative;
+}
+
+a.homegallery:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.homegallery:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+.homeh1 {
+    font-family: 'DM Sans', sans-serif;
+    color:white;
+    text-align: left;
+    font-size: 120px;
+}
+
+/* About Page */
+
+.aboutcontainer {
+    width:1280px;
+    height: 848px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 10% 20% 70%;
+    grid-gap: 5px;
+}
+
+.aboutcontainer > div {   
+    text-align: center;
+}
+
+.aboutnav {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    margin-top: -40px;
+}
+
+.aboutimage {
+    grid-column: 1/3;
+    grid-row: 2;
+    margin-top: -30px;
+}
+
+.aboutlabel {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: -170px;
+    margin-top: -30px;
+    
+}
+
+.namelist {
+grid-column: 2;
+grid-row: 2;
+margin-left: -100px;
+margin-top: 35px;
+z-index: 2;
+
+
+
+    
+}
+
+.namelist ul {
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+
+}
+
+.namelist ul li {
+    list-style: none;
+    padding: 20px;
+
+}
+
+.namelist ul li a {
+    font-family: 'DM sans', sans-serif;
+    color: white;
+    font-size: 60px;
+    text-decoration: none;
+}
+
+.homenav ul li a:hover {
+}
+
+
+.aboutnav ul {
+    text-align: center;
+}
+
+.aboutnav ul li {
+    list-style: none;
+    padding: 50px;
+    display: inline;
+}
+
+.aboutnav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.aboutnav ul li a:hover {
+}
+
+a.aboutabout { 
+position: relative;
+}
+
+a.aboutabout:before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: visible;
+    transition: all .3s ease-in-out;    
+}
+
+
+a.aboutgallery { 
+position: relative;
+}
+
+a.aboutgallery:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.aboutgallery:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+a.abouthome { 
+position: relative;
+}
+
+a.abouthome:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.abouthome:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.aboutalbum { 
+position: relative;
+}
+
+a.aboutalbum:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.aboutalbum:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+
+a.harryname { 
+position: relative;
+}
+
+a.harryname:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 5px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.harryname:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+a.liamname { 
+position: relative;
+}
+
+a.liamname:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 5px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.liamname:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+a.louisname { 
+position: relative;
+}
+
+a.louisname:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 5px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.louisname:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+
+a.niallname { 
+position: relative;
+}
+
+a.niallname:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 5px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.niallname:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+
+a.zaynname { 
+position: relative;
+}
+
+a.zaynname:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 5px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.zaynname:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* Albums Page */
+
+.albumcontainer {
+    width:1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 5px;
+    background-color: black;
+}
+
+.albumcontainer > div {   
+    text-align: center;
+}
+
+.albumnav {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    background-color: white;
+}
+
+.albumimage {
+    grid-column: 1/3;
+    grid-row: 2;
+    align-self: center;
+    margin-top: -100px;
+}
+
+.albumlabel {
+    grid-column: 1/3;
+    grid-row: 2; 
+    align-self: center;
+    margin-top: 510px;
+}
+
+.logo {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+
+
+.allnight{
+    grid-column: 2;
+    grid-row: 3;
+    margin-left: -100px;
+    margin-top: 30px;
+}
+
+.takehome{
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: -1250px;
+}
+
+.midnight{
+    grid-column: 2;
+    grid-row: 4;
+    margin-top: -380px;
+    margin-left: -100px;
+}
+
+.four{
+    grid-column: 1;
+    grid-row: 5; 
+    margin-left: -1250px;
+}
+
+.AM{
+    grid-column: 2;
+    grid-row: 5;
+    margin-top: -380px;
+    margin-left: -100px;
+}
+
+.albumart h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.albumart img {
+    width: 275px;
+    transition: transform .3s ease-in;
+    transform-origin: center;    
+}
+
+.albumart img:hover {
+    transform: scale(1.1)
+}
+
+.albumnav ul {
+    text-align: center;
+}
+
+.albumnav ul li {
+    list-style: none;
+    padding: 50px;
+    display: inline;
+}
+
+.albumnav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.albumnav ul li a:hover {
+}
+
+a.albumabout { 
+position: relative;
+}
+
+a.albumabout:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.albumabout:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.albumgallery { 
+position: relative;
+}
+
+a.albumgallery:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.albumgallery:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+a.albumhome { 
+position: relative;
+}
+
+a.albumhome:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.albumhome:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.albumalbum { 
+position: relative;
+}
+
+a.albumalbum:before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: visible;
+    transition: all .3s ease-in-out;    
+}
+
+
+/* Gallery Page */
+
+.gallerycontainer {
+    width:1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 5px;
+}
+
+.gallerycontainer > div {   
+    text-align: center;
+}
+
+
+.hover-txt {
+    
+    position: absolute;
+    align-self: center;
+    top: 40%;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hover-txt p {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3em;
+    position: absolute;
+    width: 90%;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate (-50%, -50%);
+    -ms-transform: translate (-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+
+.hover-txt2 {
+    
+    position: absolute;
+    align-self: center;
+    top: 40%;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hover-txt2 p {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4em;
+    position: absolute;
+    width: 90%;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate (-50%, -50%);
+    -ms-transform: translate (-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+.hover-txt3 {
+    
+    position: absolute;
+    align-self: center;
+    top: 40%;
+    height: 30%;
+    width: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hover-txt3 p {
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 4.5em;
+    position: absolute;
+    width: 90%;
+    top: 12%;
+    left: 50%;
+    -webkit-transform: translate (-50%, -50%);
+    -ms-transform: translate (-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+}
+
+.gallery1:hover .hover-txt{
+    opacity: 1;
+    width: 32.5%;
+    margin-left: 623px;
+    margin-top: -20px;
+}
+
+
+.gallery2:hover .hover-txt{
+    opacity: 1;
+    width: 97%;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.gallery3:hover .hover-txt2{
+    opacity: 1;
+    width: 98.7%;
+    margin-left: 8px;
+    margin-top: -20px;
+}
+
+
+.gallery4:hover .hover-txt{
+    opacity: 1;
+    width: 32.5%;
+    margin-left: 623px;
+    margin-top: -20px;
+}
+
+.gallery5:hover .hover-txt{
+    opacity: 1;
+    width: 97%;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.gallery6:hover .hover-txt3{
+    opacity: 1;
+    width: 98.7%;
+    margin-left: 8px;
+    margin-top: -20px;
+}
+
+.gallery7:hover .hover-txt{
+    opacity: 1;
+    width: 32.5%;
+    margin-left: 623px;
+    margin-top: -20px;
+}
+
+.gallery8:hover .hover-txt{
+    opacity: 1;
+    width: 97%;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.gallery9:hover .hover-txt3{
+    opacity: 1;
+    width: 98.7%;
+    margin-left: 8px;
+    margin-top: -20px;
+}
+
+
+.gallerynav {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    background-color: white;
+}
+
+
+.gallerylabel {
+    grid-column: 1/3;
+    grid-row: 3; 
+    align-self: center;
+    margin-top: -5960px;
+}
+
+
+.gallery1{
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: -585px;
+    position: relative;
+}
+
+
+.gallery2{
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: -405px;
+    margin-left: 640px;
+    position: relative;
+}
+
+.gallery3{
+    grid-column: 1/3;
+    grid-row: 4;
+    align-self: center;
+    margin-top: 350px;
+    margin-left: 26px;
+    position: relative;
+}
+
+.gallery4{
+    grid-column: 1;
+    grid-row: 5;
+    margin-left: -585px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.gallery5{
+    grid-column: 2;
+    grid-row: 5;
+    margin-top: -405px;
+    margin-left: 640px;
+    object-fit: cover;
+    position: relative;
+    
+}
+
+.gallery6{
+    grid-column: 1/3;
+    grid-row: 6;
+    align-self: center;
+    margin-left: 26px;
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+.gallery7{
+    grid-column: 1;
+    grid-row: 7;
+    margin-left: -585px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.gallery8{
+    grid-column: 2;
+    grid-row: 7;
+    margin-top: -454px;
+    margin-left: 640px;
+    position: relative;
+}
+
+.gallery9{
+    grid-column: 1/3;
+    grid-row: 8;
+    align-self: center;
+    margin-left: 26px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.galleryimages img {
+    filter: grayscale(0%);
+    transition: filter .3s ease-in;
+}
+
+.galleryimages img:hover {
+    filter: grayscale(100%);
+}
+
+.gallerynav ul {
+    text-align: center;
+}
+
+.gallerynav ul li {
+    list-style: none;
+    padding: 50px;
+    display: inline;
+}
+
+.gallerynav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.gallerynav ul li a:hover {
+}
+
+a.galleryabout { 
+position: relative;
+}
+
+a.galleryabout:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.galleryabout:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.gallerygallery { 
+position: relative;
+}
+
+a.gallerygallery:before {
+    content:"";
+    position:absolute;
+    width:100%;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: visible;
+    transition: all .3s ease-in-out;    
+}
+
+a.galleryhome { 
+position: relative;
+}
+
+a.galleryhome:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.galleryhome:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.galleryalbum { 
+position: relative;
+}
+
+a.galleryalbum:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.galleryalbum:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* IndividualAlbumPages */
+
+.apagecontainer {
+    width:1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 5px;
+}
+
+.apagecontainer > div {   
+    text-align: center;
+}
+
+.apagenav {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    background-color: white;
+}
+
+
+.apagelabel {
+    grid-column: 1/3;
+    grid-row: 2; 
+    align-self: center;
+}
+
+.playbutton {
+    grid-column: 2;
+    grid-row: 7; 
+    margin-top: -320px;
+    margin-left: -250px;
+}
+
+.tracks { 
+    grid-column: 1;
+    grid-row: 4;
+    margin-left: 130px;
+}
+
+.awards {
+    grid-column: 2;
+    grid-row: 4; 
+    margin-left: 50px;
+}
+
+.apagecover {
+    grid-column: 1/3;
+    grid-row: 2;
+    align-self: center;
+}
+
+.apagelabel {
+    grid-column: 1/3;
+    grid-row: 3;
+    text-align: center;
+    margin-top: -100px;
+}
+
+.tracks h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: #D51719;
+    text-align: left;
+    margin-left: 25px;
+    font-size: 40px;
+}
+
+.tracks li {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.awards h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: #D51719;
+    text-align: left;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.awards p {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding: 5px;
+}
+
+
+.playbutton img {
+    transition: transform .3s ease-in;
+    transform-origin: center;  
+}
+
+.playbutton img:hover {
+    transform: scale(1.1)
+}
+
+.playbutton h3 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: italic;
+}
+
+.apagenav ul {
+    text-align: center;
+}
+
+.apagenav ul li {
+    list-style: none;
+    padding: 50px;
+    display: inline;
+}
+
+.apagenav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.apagenav ul li a:hover {
+}
+
+a.apageabout { 
+position: relative;
+}
+
+a.apageabout:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.apageabout:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.apagegallery { 
+position: relative;
+}
+
+a.apagegallery:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.apagegallery:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+a.apagehome { 
+position: relative;
+}
+
+a.apagehome:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.apagehome:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.apagealbum { 
+position: relative;
+}
+
+a.apagealbum:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.apagealbum:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+/* ArtistPages */
+
+.artistcontainer {
+    width:1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    grid-gap: 5px;
+}
+
+.artistcontainer > div {   
+    text-align: center;
+}
+
+.artistnav {
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    background-color: white;
+}
+
+
+.artistlabel {
+    grid-column: 1/3;
+    grid-row: 2; 
+    margin-top: 320px;
+    margin-left: -740px;
+}
+
+.artistphoto {
+    grid-column: 1/3;
+    grid-row: 2; 
+    align-self: center;
+    z-index: -1;
+}
+
+.signature { 
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 580px;
+    margin-left: -407px;
+}
+
+.signaturelouis { 
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 670px;
+    margin-left: -320px;
+}
+
+.signatureliam { 
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -300px;
+    margin-left: -160px;
+}
+
+.signatureniall { 
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -320px;
+    margin-left: -250px;
+}
+
+.signaturezayn { 
+    grid-column: 2;
+    grid-row: 3;
+    margin-top: -400px;
+    margin-left: -310px;
+}
+
+
+.artistname {
+    grid-column: 1;
+    grid-row: 2;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 300px;
+    color:white;
+    margin-left: 70px;
+    margin-top: -5px;
+}
+
+.text1 {
+    grid-column: 1;
+    grid-row: 2; 
+    margin-left: 81px;
+    margin-top: 440px;
+}
+
+.text2 {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 440px;
+    margin-left: -700px;
+}
+
+.text2louis {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 440px;
+    margin-left: -580px;
+}
+
+.text2liam {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 440px;
+    margin-left: -470px;
+}
+
+.text2niall {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 440px;
+    margin-left: -600px;
+}
+
+
+.text2zayn {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 440px;
+    margin-left: -570px;
+}
+
+.text1 h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+     margin-left: 5px;
+}
+
+.text1 p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: -20px
+}
+
+
+.text2 h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.text2 p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: -20px
+}
+
+.text2 li {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: -20px;
+    list-style: none;
+    margin-left: -51px;
+}
+
+.text2 li::before { 
+content: "\25AA";
+}
+
+
+
+.text2louis h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.text2louis p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: -20px
+}
+
+.text2louis li {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: -20px;
+    list-style: none;
+    margin-left: -51px;
+}
+
+.text2louis li::before { 
+content: "\25AA";
+}
+
+
+
+
+.text2liam h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.text2liam p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: -20px
+}
+
+.text2liam li {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: -20px;
+    list-style: none;
+    margin-left: -51px;
+}
+
+.text2liam li::before { 
+content: "\25AA";
+}
+
+
+
+
+.text2niall h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.text2niall p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: -20px
+}
+
+.text2niall li {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: -20px;
+    list-style: none;
+    margin-left: -51px;
+}
+
+.text2niall li::before { 
+content: "\25AA";
+}
+
+
+
+
+.text2zayn h3 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.text2zayn p {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 5px;
+    margin-top: -20px
+}
+
+.text2zayn li {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: -20px;
+    list-style: none;
+    margin-left: -51px;
+}
+
+.text2zayn li::before { 
+content: "\25AA";
+}
+
+
+
+
+.artistnav ul {
+    text-align: center;
+}
+
+.artistnav ul li {
+    list-style: none;
+    padding: 50px;
+    display: inline;
+}
+
+.artistnav ul li a {
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a.artistabout { 
+position: relative;
+}
+
+a.artistabout:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.artistabout:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.artistgallery { 
+position: relative;
+}
+
+a.artistgallery:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.artistgallery:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+
+a.artisthome { 
+position: relative;
+}
+
+a.artisthome:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.artisthome:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
+a.artistalbum { 
+position: relative;
+}
+
+a.artistalbum:before {
+    content:"";
+    position:absolute;
+    width:0;
+    height: 3px;
+    bottom:0;
+    left:0;
+    background-color: #D51719;
+    visibility: hidden;
+    transition: all .3s ease-in-out;    
+}
+
+a.artistalbum:hover:before {
+    visibility: visible;
+    width: 100%;
+}
+
